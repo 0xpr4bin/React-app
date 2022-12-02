@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+
+*,
+*::after,
+*::before{
+  padding: 0;
+  margin: 0;
+  border-radius: border-box;
+}
+
+body{
+  background-color: aliceblue;
+  font-family: "Roboto", sans-serif;
+}
+
+.mainsign-up{
+  background-color: white;
+  max-width: 480px;
+  margin: 32px auto;
+  padding: 32px;
+ 
+}
+form{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+input{
+  padding: 8px;
+  border: 1px solid gray;
+  font-size: 16px;
+  font-family: inherit;
+
+}
+button{
+  padding: 8px;
+  font-size: 1.2rem;
+  background-color: blue;
+  border: none;
+  color: white;
+}
+h1{
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+p{
+  margin-bottom: 3rem;
+  font-size: large;
+  color: brown;
+}
+.error-message{
+  color: red;
+  font-size: 0.8rem;
+}
