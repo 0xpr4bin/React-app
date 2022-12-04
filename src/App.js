@@ -1,27 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
-import Login from "./pages/Login";
-import Profile from "./pages/Profile";
-import Signup from "./pages/Signup";
-import Navbar from "./pages/Navbar";
+import Login from "./components/Login";
+import Profile from "./components/Profile";
+import Signup from "./components/Signup";
+import Navbar from "./components/Navbar";
 
 
 function App(){
- 
-  return (
-  
+  return(
+  <>
    <Router>
     <Navbar/>
-    <Switch>
-      <Route exact path="/Navbar" componenent={Navbar}/>
-      <Route exact path="/Signup" component={Signup}/>
-      <Route exact path="/Login" component={()=><Login authorized={false}/>}/>
-      <Route exact path="/Profile" component={() =><Profile authorized={false}/>}/>
-      
+      <Switch>
+        <Route exact path="/Navbar" componenent={Navbar}/>
       </Switch>
-   </Router>
-  
+  </Router>
+   
+  </>
   );
 }
+
+  
 
 export default App;
