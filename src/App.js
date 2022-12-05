@@ -1,9 +1,9 @@
 import React from "react";
 import { BrowserRouter as Router,Route,Switch } from "react-router-dom";
-import Login from "./components/Login";
-import Profile from "./components/Profile";
-import Signup from "./components/Signup";
+import './App.css';
+import Signup from "./components/pages/Signup";
 import Navbar from "./components/Navbar";
+import Home from "./components/pages/home";
 
 
 function App(){
@@ -12,10 +12,10 @@ function App(){
    <Router>
     <Navbar/>
       <Switch>
-        <Route exact path="/Navbar" componenent={Navbar}/>
+        <Route path='/'  exact component={Home}/>
       </Switch>
-  </Router>
-   
+      
+  </Router>   
   </>
   );
 }
