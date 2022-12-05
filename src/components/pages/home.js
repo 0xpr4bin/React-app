@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
+import HeroSection from '../Section';
 import Footer from '../Footer';
 import Signup from './Signup';
 
