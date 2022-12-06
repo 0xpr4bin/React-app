@@ -6,8 +6,7 @@ import './Section.css';
 function HeroSection() {
   return (
     <div className='hero-container'>
-      <video src='/public/vedios/vedio-2.mp4' autoPlay loop muted />
-      <h1>BOOK THE TOKEN</h1>
+      <h1>Welcome to the online token system</h1>
       <p>What are you waiting for?</p>
       <div className='hero-btns'>
         <Button
@@ -15,15 +14,8 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          GET STARTED
-        </Button>
-        <Button
-          className='btns'
-          buttonStyle='btn--primary'
-          buttonSize='btn--large'
-          onClick={console.log('hey')}
-        >
-          LET'S DO IT <i className='far fa-play-circle' />
+          CREATE ACCOUNT
+    
         </Button>
       </div>
     </div>

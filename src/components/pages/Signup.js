@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
+import { Button } from '../Button';
 import Input from "../../Input";
 import { useHistory } from "react-router-dom";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import '../../App.css';
+
 
 
 
@@ -31,19 +33,17 @@ const schema = yup.object({
     <>
 
     <div className="sign-up">
-    <h1>Sign-Up</h1>
-    <p>Welcome to Online token System</p>
-    <form onSubmit={handleSubmit(formSubmit)}>
+    <form  onSubmit={handleSubmit(formSubmit)}>
     <Input id="firstname" label="Firstname" placeholder="Enter Firstname" register={{...register("firstname")}} errorMessage={errors.firstname?.message}/> 
     <Input id="middlename" label="Middlename" placeholder="Enter Middlename" register={{...register("middlename")}} errorMessage={errors.middlename?.message}/>
     <Input id="lastname" label="Lastname" placeholder="Enter Lastname" register={{...register("lastname")}} errorMessage={errors.lastname?.message}/>
       <Input id="username" label="Username" placeholder="Enter Username" register={{...register("username")}} errorMessage={errors.username?.message}/>
-      <Input id="phone number" label="Phone Number" placeholder="Enter Phonenumber" register={{...register("phonenumber")}} errorMessage={errors.phonenumber?.message}/>
+      <Input id="phone-number" label="Phone Number" placeholder="Enter Phonenumber" register={{...register("phonenumber")}} errorMessage={errors.phonenumber?.message}/>
       <Input id="email" label="Email" placeholder="Enter Email" register={{...register("email")}} errorMessage={errors.email?.message}/>
       <Input id="password" label="Password" placeholder="Enter Password" register={{...register("password")}} errorMessage={errors.password?.message}/>
-      <Input id="confirm password" label="Confirm Password" placeholder="Confirm Password" register={{...register("confirmpassword")}} errorMessage={errors.confirmpassword?.message}/>
-    <button onClick={()=>{history.push("/Login")}} >Sign-up</button>
+      <Input id="confirm-password" label="Confirm Password" placeholder="Confirm Password" register={{...register("confirmpassword")}} errorMessage={errors.confirmpassword?.message}/>
     </form>
+    <Button className='button' buttonStyle='btn--outline'>Signup</Button>
     </div>
 
     </>

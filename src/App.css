@@ -7,7 +7,6 @@
 
 .home,
 .services,
-.products,
 .sign-up {
   display: flex;
   height: 90vh;
@@ -25,20 +24,20 @@
   font-size: 100px;
 }
 
-.products {
-  background-image: url('/public/images/img-1.jpg');
-  background-position: center;
-  background-size: fill;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up {
-  background-image: url('/public/images/img-8.jpg');
-  background-position: center;
+.sign-up{
+  width: 100%;
+  height:900px;
   background-size: cover;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/public/css.jpg");
+  background-attachment: fixed;
+  background-position: center;
   background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
+  text-decoration: solid;
+  size: 10px;
 }
+.button.sign-up{
+  height: fit-content;
+  padding: 50px;
+  
+}
+  
