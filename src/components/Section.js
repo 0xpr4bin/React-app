@@ -3,11 +3,12 @@ import '../App.css';
 import { Button } from './Button';
 import './Section.css';
 
-function HeroSection() {
+function Section() {
   return (
     <div className='hero-container'>
-      <h1>Welcome to the online token system</h1>
-      <p>What are you waiting for?</p>
+      <h1>Welcome </h1>
+      <p>to the online token system</p>
+    
       <div className='hero-btns'>
         <Button
           className='btns'
@@ -22,4 +23,4 @@ function HeroSection() {
   );
 }
 
-export default HeroSection;
+export default Section;

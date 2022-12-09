@@ -47,9 +47,11 @@
   
   .nav-item {
     height: 80px;
+    
   }
   
   .nav-links {
+    font-size: medium;
     color: #fff;
     display: flex;
     align-items: center;

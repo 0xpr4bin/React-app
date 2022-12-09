@@ -7,9 +7,6 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import * as yup from "yup";
 import '../../App.css';
 
-
-
-
 const schema = yup.object({
     firstname: yup.string().required("Firstname is required field"),
     lastname: yup.string().required("Lastname is required field"),
@@ -20,13 +17,21 @@ const schema = yup.object({
     confirmpassword: yup.string().required("Confirm Password is required field").oneOf([yup.ref("password")],"Password must be same"),
   }).required();
 
-  function Signup(){
-    let history=useHistory();
+  function Signup(props){
+    const {email ,setEmail}= useState('');
+    const {username,setUsername}= useState('');
+    const {firstname ,setFirstname}= useState('');
+    const {middlename ,setMiddlename}= useState('');
+    const {lastname,setLastname}= useState('');
+    const {confirmpassword ,setConfirmPassword}= useState('');
+    const {phonenumber ,setPhonenumber}= useState('');
+
     const{handleSubmit,register,formState:{errors}}=useForm({
       resolver:yupResolver(schema),
       });
       console.log(errors);
       const formSubmit= data =>{
+        data.preventDefault();
         console.log(data);
       }
     return(
@@ -34,6 +39,7 @@ const schema = yup.object({
 
     <div className="sign-up">
     <form  onSubmit={handleSubmit(formSubmit)}>
+    <h1>Please Sign-up</h1>
     <Input id="firstname" label="Firstname" placeholder="Enter Firstname" register={{...register("firstname")}} errorMessage={errors.firstname?.message}/> 
     <Input id="middlename" label="Middlename" placeholder="Enter Middlename" register={{...register("middlename")}} errorMessage={errors.middlename?.message}/>
     <Input id="lastname" label="Lastname" placeholder="Enter Lastname" register={{...register("lastname")}} errorMessage={errors.lastname?.message}/>
@@ -42,8 +48,10 @@ const schema = yup.object({
       <Input id="email" label="Email" placeholder="Enter Email" register={{...register("email")}} errorMessage={errors.email?.message}/>
       <Input id="password" label="Password" placeholder="Enter Password" register={{...register("password")}} errorMessage={errors.password?.message}/>
       <Input id="confirm-password" label="Confirm Password" placeholder="Confirm Password" register={{...register("confirmpassword")}} errorMessage={errors.confirmpassword?.message}/>
+      <Button  buttonStyle='btn--outline'>Signup</Button>
+      
+      <Button buttonStyle='btn--outline' onClick={()=>props.onFormSwitch('Login')} href="/Login">Already have an account?Login</Button>
     </form>
-    <Button className='button' buttonStyle='btn--outline'>Signup</Button>
     </div>
 
     </>
