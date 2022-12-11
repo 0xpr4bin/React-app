@@ -1,6 +1,6 @@
 import React from 'react';
 import '../../App.css';
-import { Button } from '../Button';
+
 
 const Contacts = () => {
   const [formStatus, setFormStatus] = React.useState()
@@ -37,7 +37,7 @@ const Contacts = () => {
           </label>
           <textarea className="form-control" placeholder="Enter message" id="message" required />
      
-       <Button buttonStyle='btn--outline'>Submit</Button>
+       <button >Submit</button>
           {formStatus}
        
       </form>

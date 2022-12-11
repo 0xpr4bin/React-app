@@ -4,127 +4,60 @@
   padding: 0;
   font-family: 'PT Sans', sans-serif;
 }
-
-
-.home,
-.services,
-.sign-up {
-  display: flex;
-  height: 90vh;
-  align-items: center;
-  justify-content: center;
-  font-size: 3rem;
+@media screen  and (min-width:600px){
+  .auth-form {
+    text-align: center;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: url('/public/images/signup.jpg') center center/cover no-repeat;  
+    background-attachment: fixed;
+    padding: 2rem;
+    margin: 0.5rem;
+  }
 }
 
-.services {
-  background-image: url('/public/images/img-2.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  color: #fff;
-  font-size: 100px;
-}
-
-.sign-up{
-  width: 100%;
-  height:800px;
-  background-size: cover;
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/public/images/signup.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-decoration: solid;
-  size: 10px;
-}
-form{
+.login-form,.signup-form { 
   display: flex;
   flex-direction: column;
-  gap: 6px;
-  padding-top: 0px;
+}
+label{
+  text-align: left;
+  font-size: medium;
+  padding: 0.25rem 0;
 }
 h1{
-  color:white;
   font-size: larger;
-}
-p{
-  font-size: medium;
-  color: burlywood;
-}
-a{
-  font-size: small;
-  color:antiquewhite;
-}
-.input{
-  display: flex;
-  font-size: medium;
-  flex-direction: column;
-  gap: 6px;
-  color:aliceblue;
+  padding: 1rem 0;
 }
 
 input{
-  padding: 8px;
-  border: 1px solid gray;
-  font-size: 16px;
-  font-family: inherit;
-
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
 }
-.error-message{
-  color: red;
-  font-size: 0.8rem;
+button{
+  border: none;
+  background-color:gainsboro;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color:navy;
+  font-size: medium;
 }
-
-.container-mt-5{
-  width: 100%;
-  height:400px;
-  background-size: cover;
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/public/images/img-home.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-decoration: solid;
-  size: 10px;
+.link-btn{
+  background: none;
+  color: #fff;
+  text-decoration: underline;
 }
-.mb-4{
-  color: bisque;
-  font-size: 30px;
-  text-align: center;
-}
-.mb-3{
-  text-decoration: solid;
-  size: 10px;
-  width: 100%;
+.simple-btn:hover{
+  background:skyblue;
+  transition: all 0.3s ease-out;
 }
 
-.form-label{
-  align-items: center;
-  display: flex;
-  font-size: large;
-  flex-direction: column;
-  gap: 6px;
-  color:aliceblue;
-}
-.form-control{
-  padding: 12px 20px;
-  border: 1px solid gray;
-  font-size: 18px;
-  font-family: inherit;
-}
-.login1{
-  width: 100%;
-  height:400px;
-  background-size: cover;
-  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("/public/images/img-2.jpg");
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-decoration: solid;
-  size: 10px;
-}
-  .form2{
-    display: flex;
-    flex-direction: column;
-    gap: 6px;
-    padding-top: 0px;
-  }
+
 

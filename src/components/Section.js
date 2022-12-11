@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import { Button } from './Button';
 import './Section.css';
 
 function Section() {
@@ -10,14 +9,10 @@ function Section() {
       <p>to the online token system</p>
     
       <div className='hero-btns'>
-        <Button
-          className='btns'
-          buttonStyle='btn--outline'
-          buttonSize='btn--large'
-        >
+        <button>
           CREATE ACCOUNT
     
-        </Button>
+        </button>
       </div>
     </div>
   );
