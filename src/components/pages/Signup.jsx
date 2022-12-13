@@ -1,7 +1,5 @@
      import React,{useState} from "react";
-     import Input from "../../Input";
      import { useHistory } from "react-router-dom";
-
      import '../../App.css';
 
 

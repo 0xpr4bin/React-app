@@ -9,7 +9,7 @@ function Section() {
       <p>to the online token system</p>
     
       <div className='hero-btns'>
-        <button>
+        <button className='btn'>
           CREATE ACCOUNT
     
         </button>

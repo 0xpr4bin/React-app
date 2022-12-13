@@ -39,6 +39,19 @@ video {
   .hero-btns .btn {
     margin: 6px;
   }
+  .btn{
+    border: none;
+    background-color:gainsboro;
+    padding: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color:navy;
+    font-size: medium;
+  }
+  .btn:hover{
+    background:skyblue;
+    transition: all 0.3s ease-out;
+  }
   
   .fa-play-circle {
     margin-left: 4px;

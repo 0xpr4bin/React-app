@@ -1,8 +1,15 @@
 * {
-  box-sizing: border-box;
+  box-sizing:border-box;
   margin: 0;
   padding: 0;
-  font-family: 'PT Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
+}
+.Home,.Contacts,.Services{
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }
 @media screen  and (min-width:600px){
   .auth-form {
@@ -13,10 +20,9 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background: url('/public/images/signup.jpg') center center/cover no-repeat;  
+    background: url('/public/images/img-home.jpg') center center/cover no-repeat;  
     background-attachment: fixed;
-    padding: 2rem;
-    margin: 0.5rem;
+    padding: 1rem;
   }
 }
 
