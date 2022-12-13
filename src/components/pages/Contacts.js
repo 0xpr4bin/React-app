@@ -16,9 +16,9 @@ const Contacts = () => {
     console.log(conFom)
   }
   return (
-    <div className="container-mt-5">
-      <h2 className="mb-4">Please fill below to contact us.</h2>
-      <form onSubmit={onSubmit}>
+    <div className="contacts">
+      <form className='contact-form' onSubmit={onSubmit}>
+      <h2 className="mb-4">Please fill below.</h2>
         
           <label className="form-label" htmlFor="name">
             Name
@@ -37,7 +37,7 @@ const Contacts = () => {
           </label>
           <textarea className="form-control" placeholder="Enter message" id="message" required />
      
-       <button >Submit</button>
+       <button className='contact-btn' >Submit</button>
           {formStatus}
        
       </form>

@@ -4,12 +4,47 @@
   padding: 0;
   font-family: 'Lato', sans-serif;
 }
-.Home,.Contacts,.Services{
-  display: flex;
+.home,.services{
+  display:contents;
   height: 90vh;
   align-items: center;
   justify-content: center;
-  font-size: 3rem;
+  
+}
+.contacts{
+  text-align: center;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: linear-gradient(90deg, rgb(87, 11, 70) 0%, rgb(9, 8, 109) 100%); 
+    background-attachment: fixed;
+    padding: 1rem;
+}
+.contact-form{
+  display: flex;
+  flex-direction: column
+}
+.form-label{
+  text-align: left;
+  font-size: medium;
+  padding: 0.25rem 0;
+}
+.form-control{
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+}
+.mb-4{
+  font-size: larger;
+  padding: 1rem 0;
+}
+.contact-btn:hover{
+  background:skyblue;
+  transition: all 0.3s ease-out;
 }
 @media screen  and (min-width:600px){
   .auth-form {
@@ -20,7 +55,7 @@
     align-items: center;
     justify-content: center;
     font-size: 3rem;
-    background: url('/public/images/img-home.jpg') center center/cover no-repeat;  
+    background: url('/public/images/login.jpg') center center/cover no-repeat;  
     background-attachment: fixed;
     padding: 1rem;
   }
@@ -57,7 +92,7 @@ button{
 }
 .link-btn{
   background: none;
-  color: #fff;
+  color:cornsilk;
   text-decoration: underline;
 }
 .simple-btn:hover{

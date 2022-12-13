@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import './Section.css';
+import { Signup } from './pages/Signup';
 
 function Section() {
   return (
@@ -9,7 +10,7 @@ function Section() {
       <p>to the online token system</p>
     
       <div className='hero-btns'>
-        <button className='btn'>
+        <button  className='btn'>
           CREATE ACCOUNT
     
         </button>

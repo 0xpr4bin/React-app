@@ -53,6 +53,10 @@
     display: flex;
     justify-content: center;
   }
+  .subs-btn:hover{
+    background:skyblue;
+    transition: all 0.3s ease-out;
+  }
   
   .footer-link-wrapper {
     display: flex;

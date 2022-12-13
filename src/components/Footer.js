@@ -20,7 +20,7 @@ function Footer() {
               type='email'
               placeholder='Your Email'
             />
-            <button >Contact</button>
+            <button className='subs-btn' >subscribe</button>
           </form>
         </div>
       </section>

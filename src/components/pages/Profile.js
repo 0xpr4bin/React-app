@@ -5,7 +5,7 @@ function Profile({authorized}){
         return <Redirect to="/Login"/>
     }
     return(
-        <div>Welcome to my Profile</div>
+        <div className="profile">Welcome to my Profile</div>
     );
 }
 export default Profile;

@@ -30,7 +30,7 @@ function Navbar()
             <IconContext.Provider value={{color:'grey'}}>
             <nav className='navbar'>
                 <div className='navbar-container'>
-                        <Link to='/#' className='navbar-logo' onClick={closeMobileMenu}>
+                        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
                             TokenSystem <i className='fab fa-typo3'/>
                         </Link>
                     <div className='menu-icon' onClick={handleclick}>

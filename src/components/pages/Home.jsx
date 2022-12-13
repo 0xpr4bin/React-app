@@ -1,6 +1,5 @@
 import React ,{useState}from "react";
 import '../../App.css';
-import Navbar from "../Navbar";
 import { Login } from "./Login";
 import { Signup } from "./Signup";
 import Footer from "../Footer";
@@ -13,7 +12,8 @@ function Home(){
 
   }
   return(
-   <>   
+   <> 
+    <div className="home">
       <Section/> 
       {
 
@@ -21,6 +21,7 @@ function Home(){
         
       }
       <Footer/>
+      </div> 
 </>
   );
   }
