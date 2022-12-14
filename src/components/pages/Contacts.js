@@ -1,5 +1,6 @@
 import React from 'react';
 import '../../App.css';
+import Footer from '../Footer';
 
 
 const Contacts = () => {
@@ -16,9 +17,10 @@ const Contacts = () => {
     console.log(conFom)
   }
   return (
+    <>
     <div className="contacts">
       <form className='contact-form' onSubmit={onSubmit}>
-      <h2 className="mb-4">Please fill below.</h2>
+      <h2 className="mb-4">Contact Form.</h2>
         
           <label className="form-label" htmlFor="name">
             Name
@@ -42,6 +44,9 @@ const Contacts = () => {
        
       </form>
     </div>
+
+    <Footer/>
+    </>
   )
 }
 export default Contacts;

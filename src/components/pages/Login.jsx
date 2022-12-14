@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import Footer from "../Footer";
 
 export const Login=(props)=>{
     const {email,setEmail}=useState('');
@@ -10,6 +11,7 @@ export const Login=(props)=>{
         
     }
     return(
+        <>
         <div className="auth-form">
             <form className="login-form" onSubmit={handleSubmit}>
                 <h1>Please Log In </h1>
@@ -22,5 +24,8 @@ export const Login=(props)=>{
             </form>
         </div>
 
+
+            <Footer/>
+        </>
     )
 }
