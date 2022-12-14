@@ -1,6 +1,7 @@
      import React,{useState} from "react";
      import { useHistory } from "react-router-dom";
      import '../../App.css';
+import Footer from "../Footer";
 
 
       export const Signup=(props)=>{
@@ -14,6 +15,7 @@
             console.log(email);
         }
          return(
+            <>
             <div className="auth-form">
             <form className="signup-form" onSubmit={handleSubmit}>
                 <h1>Please Sign Up</h1>
@@ -35,7 +37,9 @@
         
             </form>
         </div>
-         
+            
+            <Footer/>
+        </>
          );
       }
     

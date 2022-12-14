@@ -3,6 +3,7 @@ import '../../App.css';
 import { Login } from "./Login";
 import { Signup } from "./Signup";
 import Section from "../Section";
+import Footer from "../Footer";
 
 function Home(){
   const [currentForm,setCurrentForm]=useState('Login');
@@ -14,12 +15,14 @@ function Home(){
    <> 
     <div className="home">
       <Section/> 
+
       {
 
         currentForm === "Login" ?  <Login onFormSwitch={toggleForm}/>:<Signup onFormSwitch={toggleForm} />
         
       }
-     
+
+
       </div> 
 </>
   );

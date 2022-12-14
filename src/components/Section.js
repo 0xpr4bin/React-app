@@ -1,7 +1,6 @@
 import React from 'react';
 import '../App.css';
 import './Section.css';
-import { Signup } from './pages/Signup';
 
 function Section() {
   return (

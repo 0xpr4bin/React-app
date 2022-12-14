@@ -9,10 +9,11 @@ function Services() {
   const [serviceData,setServiceData] =useState(serviceapi);  
   return (
     <>
-    <IconContext.Provider value={{color:'blue'}}>
       <section className='service-main-container'>
         <div className='container service-container'>
-          <h1 className='main-heading text-center fw-bold'>How to buy online token?</h1>
+          
+            <h1 className='main-heading text-center fw-bold'>Our Services avilable.</h1>
+         
           <div className='row'>
             {
               serviceData.map((curElement)=>{
@@ -33,7 +34,6 @@ function Services() {
 
         </div>
       </section>
-      </IconContext.Provider>
 
       <Footer/>
     </>
