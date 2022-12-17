@@ -3,7 +3,7 @@ import '../../App.css';
 import { Login } from "./Login";
 import { Signup } from "./Signup";
 import Section from "../Section";
-import Footer from "../Footer";
+
 
 function Home(){
   const [currentForm,setCurrentForm]=useState('Login');

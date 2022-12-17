@@ -1,10 +1,10 @@
-     import React,{useState} from "react";
-     import { useHistory } from "react-router-dom";
-     import '../../App.css';
-import Footer from "../Footer";
+    import React,{useState} from "react";
+    import { useHistory } from "react-router-dom";
+    import '../../App.css';
+    import Footer from "../Footer";
 
 
-      export const Signup=(props)=>{
+    export const Signup=(props)=>{
         const {email,setEmail}=useState('');
         const {fullname,setFullName}=useState('');
         const {pass,setPass}=useState('');
@@ -34,7 +34,6 @@ import Footer from "../Footer";
                 <button className="simple-btn" type="submit">Sign Up</button>
            
                 <button  className="link-btn" onClick={()=>props.onFormSwitch('Login')}>Already have an account? Log In here.</button>
-        
             </form>
         </div>
             

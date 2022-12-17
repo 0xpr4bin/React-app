@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import { IconContext } from 'react-icons';
 import "../../App.css";
 import "../Api/ServiceApi";
 import { serviceapi } from '../Api/ServiceApi';
