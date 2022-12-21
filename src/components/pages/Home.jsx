@@ -3,6 +3,7 @@ import '../../App.css';
 import { Login } from "./Login";
 import { Signup } from "./Signup";
 import Section from "../Section";
+import MovieTokenSystem from "../TokenSystem/MovieTicket";
 
 
 function Home(){
@@ -22,7 +23,7 @@ function Home(){
         
       }
 
-
+     
       </div> 
 </>
   );
