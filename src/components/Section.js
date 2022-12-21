@@ -6,10 +6,10 @@ function Section() {
   return (
     <div className='hero-container'>
       <h1>Welcome </h1>
-      <p>to the online token system</p>
+      <p>to the online  ticket system</p>
     
       <div className='hero-btns'>
-        <button  className='btn'>
+        <button onSubmit={()=>{'/Signp'}} className='btn'>
           CREATE ACCOUNT
     
         </button>

@@ -160,3 +160,44 @@ button{
 
 
 
+
+.ticket{
+    text-align: center;
+    color: #fff;
+    display: flex;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    background: url('/public/images/img-home.jpg') center center/cover no-repeat;  
+    background-attachment: fixed;
+    padding: 1rem;
+}
+.ticketForm{
+  display: flex;
+  flex-direction: column;
+}
+
+.ticketLabel{
+  text-align: left;
+  font-size: large;
+  padding: 0.25rem 0;
+}
+
+.ticketLabel select option{
+  font-size: medium;
+  color:darkolivegreen;
+ 
+}
+.ticketLabel select{
+  margin: 0.5rem 1rem;
+  width: 170px;
+  height: 30px;
+}
+.inputTicket{
+  margin: 0.5rem 1rem;
+  padding: 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: small;
+}
