@@ -1,7 +1,7 @@
 import React, {useState ,useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './Navbar.css';
-import { NavbarData } from '../components/Api/NavbarData';
+import { NavbarData } from './data/NavbarData';
 import { IconContext } from 'react-icons';
 
 function Navbar()

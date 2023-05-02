@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import "../../App.css";
-import "../Api/ServiceApi";
-import { serviceapi } from '../Api/ServiceApi';
+import "../data/ServiceApi";
+import { serviceapi } from '../data/ServiceApi';
 import Footer from '../Footer';
 
 function Services() {

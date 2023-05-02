@@ -3,6 +3,7 @@ import '../../App.css';
 import { Login } from "./Login";
 import { Signup } from "./Signup";
 import Section from "../Section";
+import Profile from "../TicketSystem/Profile";
 import MovieTicket from "../TicketSystem/MovieTicket";
 
 
@@ -16,6 +17,7 @@ function Home(){
   return(
    <> 
     <div className="home">
+      
       <Section/> 
 
       {
@@ -23,7 +25,8 @@ function Home(){
         currentForm === "Login" ?  <Login onFormSwitch={toggleForm}/>:<Signup onFormSwitch={toggleForm} />
         
       }
-     
+
+
       </div> 
 </>
   );
