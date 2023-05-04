@@ -1,13 +1,25 @@
 import React,{useState} from "react";
 import Footer from "../Footer";
+import { useHistory } from "react-router-dom";
+
 
 export const Login=(props)=>{
     const {email,setEmail}=useState('');
     const {pass,setPass}=useState('');
 
-    const handleSubmit=(e)=>{
+
+    const  history = useHistory();
+
+    const handleSubmit=async(e)=>{
+        const response=fetch('http://127.0.0.1:8000/login',{method:'post', body: JSON.stringify({email,pass})});
+        const data = await response.json();
+        console.log(data);
         e.preventDefault();
         console.log(email);
+        if(data.status == 200){
+            history.push('/profile')
+            }
+        
         
     }
     return(
@@ -23,8 +35,6 @@ export const Login=(props)=>{
                 <button className="link-btn" onClick={()=>props.onFormSwitch('Signup')}>Don't have an account? Sign Up here.</button>
             </form>
         </div>
-
-
             <Footer/>
         </>
     )

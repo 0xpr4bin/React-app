@@ -6,7 +6,7 @@ import Home from "./components/pages/Home";
 import Contacts from "./components/pages/Contacts";
 import Services from "./components/pages/Services";
 import {Login}  from "./components/pages/Login";
-import Profile from "./components/TicketSystem/Profile"
+import Profile from "./components/TicketSystem/Profile";
 import MovieTicket from "./components/TicketSystem/MovieTicket";
 
 
@@ -21,7 +21,7 @@ function App(){
           <Route  path='/contacts' component={Contacts}/>
           <Route  path='/services' component={Services}/>
           <Route  path='/login' component={Login}/>
-          <Route  path='/movieticket' component={MovieTicket}/>
+          <Route  path='/profile' component={Profile}/>
         </Switch>
     </Router>
     </>

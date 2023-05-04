@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import '../../App.css';
 
+
+
 export const MovieTicket = () => {
   const [state, setState] = useState({
     movie: '',

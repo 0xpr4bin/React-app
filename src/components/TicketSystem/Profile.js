@@ -5,9 +5,7 @@ import Footer from '../Footer';
 function Profile(){
     return(
         <> 
-            <MovieTicket/>
-           
-           <Footer/> 
+          <MovieTicket/>
       </>
 
     )
