@@ -148,6 +148,15 @@ button{
   color:navy;
   font-size: medium;
 }
+.forgot-link{
+  text-align: center;
+  font-size: large;
+  padding: 0.25rem 0;
+  color:cornsilk;
+  text-decoration: underline;
+  background: none;
+
+}
 .link-btn{
   background: none;
   color:cornsilk;
@@ -159,75 +168,97 @@ button{
 }
 
 
+/* Styles for the ForgotPasswordForm component */
 
-.ticket{
+  .auth-form1 {
     text-align: center;
     color: #fff;
     display: flex;
+    flex-direction: column;
     min-height: 100vh;
     align-items: center;
     justify-content: center;
-    font-size: 3rem;
-    background: url('/public/images/img-home.jpg') center center/cover no-repeat;  
+    font-size: 2rem;
+    background: linear-gradient(90deg, rgb(180, 33, 148) 0%, rgb(100, 100, 133) 100%); 
     background-attachment: fixed;
     padding: 1rem;
-}
-.ticketForm{
-  display: flex;
-  flex-direction: column;
+  }
+  .forgot-password-form{
+    display: flex;
+    flex-direction: column
+  }
+
+  .forgot-password-form label {
+  text-align: left;
+  font-size: large;
+  padding: 1rem 0;
+
 }
 
-.ticketLabel{
-  display: inline-block;
-  margin-right:10px;
-  padding: 0.25rem 0;
-}
-
-.ticketLabel select option{
-  font-size: medium;
-  color:darkolivegreen;
- 
-}
-.ticketLabel select{
-  margin: 0.5rem 1rem;
-  width: 170px;
-  height: 30px;
-}
-.inputTicket{
-  margin: 0.5rem 1rem;
+.forgot-password-form input {
+  margin:1rem 0;
   padding: 1rem;
   border: none;
   border-radius: 10px;
   font-size: small;
 }
-.movies {
+
+.forgot-btn {
+  border: none;
+  background-color:gainsboro;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color:navy;
+  font-size: medium;
+}
+.forgot-btn:hover{
+  background:skyblue;
+  transition: all 0.3s ease-out; 
+}
+
+.change-password{
+text-align: center;
+color: #fff;
+display: flex;
+flex-direction: column;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+font-size: 2rem;
+background: linear-gradient(90deg, rgb(110, 35, 178) 0%, rgb(46, 199, 41) 100%); 
+background-attachment: fixed;
+padding: 1rem;
+}
+
+.change-password-form{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-top: 2rem;
+  flex-direction: column
+
+}
+
+.change-password-form label{
+  text-align: left;
+  font-size: large;
+  padding: 1rem 0;
+}
+.change-password input{
+  margin:1rem 0;
   padding: 1rem;
-  background-color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  font-size: small;
 }
-
-.movies img {
-  width: 30%;
-  margin-bottom: 1rem;
-  background-color: white;
-  box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
-  overflow: hidden;
+.change-btn{
+  border: none;
+  background-color:gainsboro;
+  padding: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  color:navy;
+  font-size: medium;
 }
-
-.movies img:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease-in-out;
-}
-
-.movies img + img {
-  margin-left: 1rem;
-}
-
-@media screen and (max-width: 768px) {
-  .movies img {
-    width: 45%;
-  }
+.change-btn:hover{
+  background:skyblue;
+  transition: all 0.3s ease-out; 
 }

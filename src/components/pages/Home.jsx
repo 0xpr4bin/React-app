@@ -3,8 +3,7 @@ import '../../App.css';
 import { Login } from "./Login";
 import { Signup } from "./Signup";
 import Section from "../Section";
-import Profile from "../TicketSystem/Profile";
-import MovieTicket from "../TicketSystem/MovieTicket";
+
 
 
 

@@ -8,6 +8,8 @@ import Services from "./components/pages/Services";
 import {Login}  from "./components/pages/Login";
 import Profile from "./components/TicketSystem/Profile";
 import MovieTicket from "./components/TicketSystem/MovieTicket";
+import ForgotPasswordForm from './components/pages/forgotpass';
+import ChangePasswordForm from "./components/pages/changepass";
 
 
 function App(){
@@ -22,6 +24,9 @@ function App(){
           <Route  path='/services' component={Services}/>
           <Route  path='/login' component={Login}/>
           <Route  path='/profile' component={Profile}/>
+          <Route  path='/forgot-password' component={ForgotPasswordForm}/>
+          <Route  path='/change-password' component={ChangePasswordForm}/>
+          
         </Switch>
     </Router>
     </>

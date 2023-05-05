@@ -1,6 +1,7 @@
     import React,{useState} from "react";
     import '../../App.css';
     import Footer from "../Footer";
+    import { useHistory } from "react-router-dom";
 
 
     export const Signup=(props)=>{
@@ -9,9 +10,18 @@
         const {pass,setPass}=useState('');
         const {confirmpass,setConfirmPass}=useState('');
 
-        const handleSubmit=(e)=>{
+        const  history = useHistory();
+
+        const handleSubmit=async(e)=>{
+            const response=fetch('http://127.0.0.1:8000/api/register',{method:'post', body: JSON.stringify({email,fullname,pass,confirmpass})});
+            const data = await response.json();
+            console.log(data);
             e.preventDefault();
             console.log(email);
+            if(data.status === 200){
+                history.push('/login')
+                }
+            
         }
          return(
             <>
