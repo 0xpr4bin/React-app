@@ -15,7 +15,7 @@ export const serviceapi =[
     {
         id: 3,
         logo: "fab fa-amazon-pay ",
-        title: "Pay for the token.",
+        title: "Pay for the ticket.",
         info: "You can pay according to the token you want to buy and settle the date as you like",
     },
     {

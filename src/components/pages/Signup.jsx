@@ -13,14 +13,24 @@
         const  history = useHistory();
 
         const handleSubmit=async(e)=>{
-            const response=fetch('http://127.0.0.1:8000/api/register',{method:'post', body: JSON.stringify({email,fullname,pass,confirmpass})});
-            const data = await response.json();
-            console.log(data);
+    
             e.preventDefault();
-            console.log(email);
-            if(data.status === 200){
-                history.push('/login')
-                }
+            await fetch('http://127.0.0.1:8000/api/register/',
+            {
+                method:'POST',
+                 body: JSON.stringify({
+                    email:setEmail,
+                    fullname:setFullName,
+                    pass:setPass,
+                    confirmpass:setConfirmPass,
+                }),
+                headers: {
+                    'Content-type': 'application/json; charset=UTF-8',
+                    }
+            }
+        )
+        .then((response)=>response.json())
+        .then((result)=>console.log(result))
             
         }
          return(

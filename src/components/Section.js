@@ -1,15 +1,17 @@
 import React from 'react';
 import '../App.css';
 import './Section.css';
+import { useHistory } from "react-router-dom";
 
 function Section() {
+  const  history = useHistory();
   return (
     <div className='hero-container'>
-      <h1>Welcome </h1>
-      <p>to the online  ticket system</p>
+      <h1>BOOK </h1>
+      <h2>ticket for your favourite movies.</h2>
     
       <div className='hero-btns'>
-        <button onSubmit={()=>{'/Signp'}} className='btn'>
+        <button onClick={()=>{history.push('/login')}} className='btn'>
           CREATE ACCOUNT
     
         </button>

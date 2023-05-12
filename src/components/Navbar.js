@@ -31,7 +31,7 @@ function Navbar()
             <nav className='navbar'>
                 <div className='navbar-container'>
                         <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
-                            TokenSystem <i className='fab fa-typo3'/>
+                        Online Ticket Booking System <i className='fab fa-typo3'/>
                         </Link>
                     <div className='menu-icon' onClick={handleclick}>
                         <i className={click ? 'fas fa-times': 'fas fa-bars'}/>

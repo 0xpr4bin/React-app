@@ -1,12 +1,16 @@
-import React from 'react'
-import MovieTicket from './MovieTicket' 
+
+import Movies from './Movies' 
 import Footer from '../Footer';
 
-function Profile(){
+
+const Profile =() => {
+
+  
     return(
         <> 
-          <MovieTicket/>
-          <Footer/>
+          <Movies/>
+         <Footer/>
+          
       </>
 
     )

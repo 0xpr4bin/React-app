@@ -4,6 +4,7 @@ import { useHistory } from "react-router-dom";
 import { Link } from 'react-router-dom';
 
 
+
 export const Login=(props)=>{
     const {email,setEmail}=useState('');
     const {pass,setPass}=useState('');
@@ -12,15 +13,32 @@ export const Login=(props)=>{
     const  history = useHistory();
 
     const handleSubmit=async(e)=>{
-        const response=fetch('http://127.0.0.1:8000/api/login',{method:'post', body: JSON.stringify({email,pass})});
-        const data = await response.json();
-        console.log(data);
         e.preventDefault();
-        console.log(email);
-        if(data.status === 200){
-            history.push('/profile')
-            }
+        await fetch('http://127.0.0.1:8000/api/login/',
+        {
+            method:'POST',
+         body: JSON.stringify({
+            email :email,
+            pass :pass
+            }),
+    headers: {
+        'Content-type': 'application/json; charset=UTF-8',
+        }
     }
+)
+    .then((response)=> response.json())
+    .then((result)=>{
+        console.log(result.data);
+        if(result.message ==="200 ok"){
+            alert("you are logged in");
+            history.push('/profile')
+        }
+        else{
+            alert("you are not signed in.")
+        }
+    })
+}
+            
     return(
         <>
         <div className="auth-form">
@@ -38,7 +56,8 @@ export const Login=(props)=>{
             </form>
             
         </div>
-            <Footer/>
+
+        <Footer/>
         </>
     )
 }

@@ -10,10 +10,12 @@ function ForgotPasswordForm() {
 
   const handleSubmit = async(event) => {
     event.preventDefault();
-    const response=fetch('http://127.0.0.1:8000/api/forgot-password/',{method:'post', body: JSON.stringify({email})});
-    const data = await response.json();
+    const response=fetch('http://127.0.0.1:8000/api/forgot-password/',
+    {method:'POST', body: JSON.stringify({email})}),
+    data = await response.json();
     console.log(data);
     console.log(email);
+
     if(data.status === 200){
         history.push('/home')
         }

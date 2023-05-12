@@ -1,7 +1,7 @@
   
   .hero-container {
-    background: url('/public/images/homepage.jpg') center center/cover no-repeat; 
-    height: 100vh;
+    background: url('/public/images/guardian1.jpg') center center/cover no-repeat; 
+    height: 150vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -12,14 +12,14 @@
   }
   
   .hero-container > h1 {
-    color: #fff;
+    color:floralwhite;
     font-size: 100px;
     margin-top: -100px;
   }
   
-  .hero-container > p {
+  .hero-container > h2 {
     margin-top: 8px;
-    color: #fff;
+    color: floralwhite;
     font-size: 32px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
       'Lucida Sans', Arial, sans-serif;

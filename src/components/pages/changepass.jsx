@@ -29,10 +29,9 @@ function ChangePasswordForm() {
   return (
     <>
     <div className='change-password'>
-    <form classname='change-password-form' onSubmit={handleSubmit}>
+    <form className='change-password-form' onSubmit={handleSubmit}>
         <h1>Change Password</h1>
-      <label>
-        New Password:
+      <label>New Password:</label>
         <input
           type="password"
           value={password}
@@ -40,10 +39,10 @@ function ChangePasswordForm() {
           required
           placeholder="*********************"
         />
-      </label>
       <br />
       <label>
         Confirm Password:
+        </label>
         <input
           type="password"
           value={confirmPassword}
@@ -51,7 +50,7 @@ function ChangePasswordForm() {
           required
           placeholder="*********************"
         />
-      </label>
+  
       <br />
       <button className='change-btn' type="submit">Submit</button>
     </form>
