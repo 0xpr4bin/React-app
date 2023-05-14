@@ -16,14 +16,19 @@ function ChangePasswordForm() {
       alert('Passwords do not match.');
       return;
     }
-    const response=fetch('http://127.0.0.1:8000/api/change-password/',{method:'post', body: JSON.stringify({password,confirmPassword})});
-    const data = await response.json();
-    console.log(data);
-    // TODO: Send a request to your backend API to update the user's password with the new password and the token
-    // Once the password has been updated, redirect the user to the login page
-    if(data.status === 200){
-        history.push('/login')
-        }
+    const response=fetch('http://127.0.0.1:8000/api/change-password/',{method:'post', 
+    body: JSON.stringify({password,confirmPassword}),
+
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+      }
+  
+  }
+    )
+    .then((response)=> response.json())
+  .then((result)=>{console.log(result.data);
+  }
+  )
   }
 
   return (
@@ -52,7 +57,7 @@ function ChangePasswordForm() {
         />
   
       <br />
-      <button className='change-btn' type="submit">Submit</button>
+      <button className='change-btn' type="submit" >Submit</button>
     </form>
     </div>
     <Footer/>

@@ -11,6 +11,9 @@ import ForgotPasswordForm from './components/pages/forgotpass';
 import ChangePasswordForm from "./components/pages/changepass";
 import { Signup } from "./components/pages/Signup";
 import SingleMovie from "./components/TicketSystem/SingleMovie";
+import Payment from "./components/pages/payment";
+
+
 
 
 function App(){
@@ -27,6 +30,7 @@ function App(){
           <Route  path='/signup' component={Signup}/>
           <Route  path='/movie/:id' component={SingleMovie}/>
           <Route  path='/profile' component={Profile}/>
+          <Route  path='/payment' component={Payment}/>
           <Route  path='/forgot-password' component={ForgotPasswordForm}/>
           <Route  path='/change-password' component={ChangePasswordForm}/>
           <Route path='/*' component={Error}/>

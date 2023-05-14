@@ -262,3 +262,94 @@ padding: 1rem;
   background:skyblue;
   transition: all 0.3s ease-out; 
 }
+
+
+.search-section {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.search-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: darkblue;
+}
+
+input[type="text"] {
+  padding: 0.5rem;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.card-error {
+  margin-top: 1rem;
+  color: red;
+  font-size: 1.2rem;
+}
+
+
+.movie-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(150vh - 9rem);
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50rem;
+  max-width: 90%;
+  border-radius: 0.5rem;
+  background-color: #f2f2f2;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+  text-align: center;
+}
+
+.movie-card figure {
+  margin-right: 2 rem;
+}
+.card-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.movie-card figure img {
+  max-width: 100%;
+  border-radius: 0.5rem;
+}
+
+.movie-card .title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin:0;
+}
+
+.movie-card .card-text {
+  font-size: 1.2rem;
+  margin:0;
+}
+
+.back-btn {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  background-color: #4caf50;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #388e3c;
+}
